@@ -1070,9 +1070,8 @@ iframe {
 
 .product_more {
   background: #fff;
-  padding-top: 20px;
   border: 1px solid #cdcdcd;
-  padding-bottom: 30px;
+  padding: 20px 20px 30px 20px;
 }
 
 .proguct__card_more {
