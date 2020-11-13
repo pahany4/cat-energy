@@ -1,0 +1,63 @@
+.main-nav__item {
+    list-style: none;
+    text-align: center;
+    padding: 1.1em 0;
+    border-top: 1px solid #ccc;
+    margin-left: -20px;
+    margin-right: -20px;
+    @include font-style(20px, 20px, bold, $textdark);
+
+    @media (min-width:768px) {
+        margin: 0;
+        @include font-style(18px, 24.86px, normal, $textdark);
+        border: none;
+        padding: .3em .1em;
+    }
+
+    @media (min-width: 1280px) {
+        @include font-style(20px, 24.86px, normal, #fff);
+        margin-right: 0;
+        margin-left: 35px;
+    }
+}
+
+.main-nav__item:last-child {
+
+    @media (max-width:768px) {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+.main-nav__item_dark {
+    @media (min-width: 1280px) {
+        color: $textdark;
+    }
+}
+
+
+/**
+* bread crumbs
+*/
+li.breadCrumbs,
+li.breadCrumbs_index {
+    color: $firmcolor;
+
+    @media (min-width: 768px) {
+        color: $textdark;
+        border-bottom: 2px solid $firmcolor;
+    }
+
+    @media (min-width: 1280px) {
+        border-bottom: 2px solid $firmcolor;
+    }
+}
+
+li.breadCrumbs_index {
+    @media (min-width: 1280px) {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+}
+
+@import "main-nav__link.scss"

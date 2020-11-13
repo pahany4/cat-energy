@@ -1,0 +1,9 @@
+.form-title {
+    @include font-style (36px, 60px, normal, $textdark);
+    font-family: "Oswald-Regular", sans-serif;
+
+    @media (min-width:768px) {
+        font-size: 60px;
+        margin-left: 40px;
+    }
+}

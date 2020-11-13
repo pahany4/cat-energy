@@ -1,0 +1,32 @@
+.set-contacts__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    position: relative;
+
+    @media (min-width:768px) {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.set-contacts-label_email {
+
+    @media (min-width:1280px) {
+        grid-column: 1;
+    }
+
+}
+
+.set-contacts-label_phone {
+
+    @media (min-width:1280px) {
+        grid-column: 2;
+    }
+
+}
+
+@import "set-contacts-input.scss";
+@import "set-contacts__icon.scss";

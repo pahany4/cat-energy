@@ -1,0 +1,22 @@
+.example__cost {
+    @include font-style (14px, 20px, normal, $textdark);
+    font-family: "Oswald-Regular", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+        line-height: 20px;
+        grid-row-start: 3;
+        grid-column-end: 3;
+        width: 45vw;
+        align-self: center;
+        text-align: right;
+    }
+
+    @media (min-width:1280px) {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        text-align: left;
+    }
+}

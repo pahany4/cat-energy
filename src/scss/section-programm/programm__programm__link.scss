@@ -1,0 +1,15 @@
+.programm__link {
+    text-decoration: none;
+    font-family: "Oswald-Regular", sans-serif;
+    text-transform: uppercase;
+    @include font-style(16px, 16px, normal, $textdark);
+
+    @media (min-width:768px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.programm__link:focus {
+    outline: 2px solid $firmcolor;
+}

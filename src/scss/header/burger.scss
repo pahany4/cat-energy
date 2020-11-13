@@ -1,0 +1,30 @@
+/**
+* button burger
+*/
+.menu-icon {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%,
+            #000 41%, #000 60%, transparent 61%, transparent 80%,
+            #000 81%);
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+/**
+* open menu
+*/
+.menu-icon__activ {
+    background: linear-gradient(45deg, transparent 45%, #000 46%, #000 55%, transparent 56%),
+        linear-gradient(-45deg, transparent 45%, #000 46%, #000 55%, transparent 56%);
+    border: none;
+}
+
+/**
+* hidden menu without js
+*/
+.menu-hid {
+    margin-top: -315px;
+}

@@ -1,0 +1,17 @@
+.footer__social-link svg {
+    fill: #666;
+}
+
+/**
+* hover
+*/
+.footer__social-link:hover svg {
+    fill: $firmcolor;
+}
+
+/**
+* activ
+*/
+.footer__social-link:active {
+    opacity: .4;
+}

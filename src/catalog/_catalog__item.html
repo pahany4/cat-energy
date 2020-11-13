@@ -1,0 +1,26 @@
+<li class="product">
+    <div class="proguct__card">
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/catalog/catalog-@@item-mobile.jpg">
+            <source media="(max-width: 1279px)" srcset="img/catalog/catalog-@@item-tablet.png">
+            <source media="(min-width: 1280px)" srcset="img/catalog/catalog-@@item-desktop.png">
+            <img class="proguct__img" src="img/catalog/catalog-@@item-desktop.png" width="@@width" height="@@height">
+        </picture>
+        <h3 class="product__title">Cat Energy</br>@@type @@weight</h3>
+        <table class="product__options">
+            <tr>
+                <td class="product__attribute">Объем</td>
+                <td class="product__value">@@volume</td>
+            </tr>
+            <tr>
+                <td class="product__attribute">Вкус</td>
+                <td class="product__value">@@flavor</td>
+            </tr>
+            <tr>
+                <td class="product__attribute">Цена</td>
+                <td class="product__value">@@cost</td>
+            </tr>
+        </table>
+        <a href="form.html" class="product__order button-link">заказать</a>
+    </div>
+</li>

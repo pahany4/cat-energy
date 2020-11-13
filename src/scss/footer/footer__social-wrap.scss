@@ -1,0 +1,11 @@
+.footer__social-wrap {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width:768px) {
+        padding: 0;
+    }
+}
+
+@import "footer__social-inner.scss";

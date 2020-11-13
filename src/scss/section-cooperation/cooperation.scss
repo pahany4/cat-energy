@@ -1,0 +1,10 @@
+.cooperation {
+    margin-bottom: 50px;
+
+    @media (min-width:1280px) {
+        position: relative;
+    }
+}
+
+@import "cooperation__index.scss";
+@import "cooperation-map.scss"

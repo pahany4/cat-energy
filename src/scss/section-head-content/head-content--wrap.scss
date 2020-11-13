@@ -1,0 +1,20 @@
+.head-content--wrap {
+    display: grid;
+    padding: 0 20px;
+    text-align: center;
+    font-family: "Oswald-Regular", sans-serif;
+
+    @media (min-width:768px) {
+        text-align: left;
+    }
+
+    @media (min-width:1280px) {
+        width: 60%;
+        align-items: center;
+    }
+}
+
+@import "head-content__title.scss";
+@import "head-content__subtitle.scss";
+@import "head-content__can.scss";
+@import "head-content__link--wrap.scss";

@@ -1,0 +1,21 @@
+.form-set-programm {
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+
+    @media (min-width:768px) {
+        border: 1px solid #cdcdcd;
+        padding-left: 30px;
+    }
+
+    @media (min-width:1280px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 40px;
+    }
+}
+
+@import "form-set-programm-label.scss";

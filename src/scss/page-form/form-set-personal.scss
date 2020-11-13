@@ -1,0 +1,14 @@
+.form-set-personal {
+    margin-bottom: 25px;
+
+    @media (min-width:1280px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        flex-grow: 1;
+        margin-right: 40px;
+    }
+}
+
+@import "form-set-personal-label.scss"

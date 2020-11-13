@@ -1,0 +1,8 @@
+.head-content__link {
+    display: block;
+
+    @media (min-width:768px) {
+        display: inline;
+        padding: .5em 1.3em;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('_head.html', { "page-title" : "cat-energy" })
+</head>
+
+<body>
+  <h1 class="visually-hidden">Cat energy</h1>
+  <div class="root">
+    <header class="header header_absolute">
+      @@include('_header.html', {
+      "textcolor" : "",
+      "index": "breadCrumbs_index",
+      "catalog" : "",
+      "form" : "" })
+    </header>
+    <main>
+      <section class="head-content">
+        <div class="mobile-background"></div>
+        @@include('index/_head-content.html')
+      </section>
+      <section class="programm">
+        <h2 class="visually-hidden">Список программ</h2>
+        <div class="programm--inner">
+          @@include('index/_programm.html', {
+          "icon-id": "cat-slim",
+          "h3-text": "Похудение",
+          "prog": "SLIM",
+          "p-programm": "Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес."
+          })
+          @@include('index/_programm.html', {
+          "icon-id": "cat-pro",
+          "h3-text": "Набор массы",
+          "p-programm": "Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!",
+          "prog": "PRO"
+          })
+        </div>
+      </section>
+      <section class="description">
+        @@include('index/_description.html')
+      </section>
+      <section class="example">
+        @@include('index/_example.html')
+      </section>
+      <section class="cooperation">
+        @@include('index/_cooperation.html')
+      </section>
+    </main>
+    <footer>
+      @@include('_footer.html')
+    </footer>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

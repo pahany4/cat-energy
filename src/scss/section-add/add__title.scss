@@ -1,0 +1,47 @@
+.add__title {
+    display: flex;
+    align-items: center;
+    font-family: "Oswald-Regular", sans-serif;
+    @include font-style (24px, 24px, normal, $textdark);
+    margin-right: -20px;
+
+    @media (min-width:768px) {
+        font-size: 36px;
+        line-height: 1;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    @media (min-width:1280px) {
+        margin-left: -70px;
+        margin-right: -70px;
+    }
+}
+
+.add__title::before,
+.add__title::after {
+    content: "";
+    height: 3px;
+    display: block;
+    background: $firmcolor;
+}
+
+.add__title::before {
+    display: none;
+
+    @media (min-width:768px) {
+        display: block;
+        width: 30px;
+        margin-right: 40px;
+    }
+
+    @media (min-width:1280px) {
+        width: 70px;
+    }
+}
+
+.add__title::after {
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin-left: 30px;
+}

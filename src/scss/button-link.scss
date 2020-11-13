@@ -1,0 +1,34 @@
+.button-link {
+    display: block;
+    text-align: center;
+    background-color: $firmcolor;
+    padding: .7em;
+    font-family: "Oswald-Regular", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include font-style (14px, 18px, normal, #fff);
+
+    @media (min-width:768px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    @media (min-width:1280px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.button-link:focus {
+    outline: 2px solid #777;
+}
+
+
+.button-link:hover {
+    background-color: $firmcolor-h;
+}
+
+.button-link:active {
+    background-color: $firmcolor-h;
+    color: #ccc;
+}

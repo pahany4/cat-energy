@@ -1,0 +1,12 @@
+.form-subtitle {
+    @include font-style (14px, 18px, normal, $textdark);
+    font-family: "Oswald-Regular", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 40px;
+    }
+}

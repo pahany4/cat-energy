@@ -1,0 +1,18 @@
+.add__item-wrap {
+    width: 280px;
+    margin: auto;
+
+    @media (min-width:768px) {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width:1280px) {
+        // grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@import "add__product-title.scss";
+@import "add__product-option.scss";
+@import "add__product-link.scss";

@@ -1,0 +1,17 @@
+.example__title {
+    @include font-style (36px, 60px, normal, $textdark);
+    font-family: "Oswald-Regular", sans-serif;
+    margin-top: 62px;
+    margin-bottom: 24px;
+
+    @media (min-width:768px) {
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom: 48px;
+        grid-row-start: 1;
+    }
+
+    @media (min-width:1280px) {
+        grid-column-start: 1;
+    }
+}

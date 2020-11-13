@@ -1,0 +1,24 @@
+.programm--wrap {
+    background-color: #f2f2f2;
+    // background-color: #000;
+    padding: 25px 15px 25px 22px;
+    margin-bottom: 14px;
+
+    @media (min-width:768px) {
+        padding-right: 62px;
+        padding-left: 53px;
+        padding-top: 66px;
+    }
+
+    @media (min-width:1280px) {
+        @include grid (2, 1, 40);
+        margin: 0 40px;
+        padding-left: 48px;
+        padding-top: 21px;
+    }
+}
+
+@import "programm__icon.scss";
+@import "programm__title.scss";
+@import "programm__subtitle.scss";
+@import "programm__programm__link.scss";

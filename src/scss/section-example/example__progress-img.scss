@@ -1,0 +1,34 @@
+.example__progress-img-before {
+    width: 100vw;
+    background-image: url("../img/before-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 240px;
+
+    @media (min-width:768px) {
+        background-image: url("../img/before-desktop.png");
+        width: 50%;
+        height: 517px;
+        position: absolute;
+        left: 0;
+        background-position: 0;
+    }
+}
+
+.example__progress-img-after {
+    width: 100vw;
+    background-image: url("../img/after-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 240px;
+
+    @media (min-width:768px) {
+        direction: rtl;
+        background-image: url("../img/after-desktop.png");
+        width: 50%;
+        height: 517px;
+        position: absolute;
+        right: 0;
+        background-position: 100%;
+    }
+}

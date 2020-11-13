@@ -1,0 +1,18 @@
+.programm__subtitle {
+    font-family: "Arial", sans-serif;
+    @include font-style(14px, 18px, normal, $textcolor);
+    margin-bottom: 42px;
+
+    @media (min-width:768px) {
+        font-size: 16px;
+        line-height: 24px;
+        width: 63%;
+        margin-bottom: 100px;
+    }
+
+    @media (min-width:1280px) {
+        clear: both;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,45 @@
+.form-set-programm-label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width:1280px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/**
+* input radio
+*/
+.form-set-programm-label::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    background-clip: content-box;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    margin-right: 20px;
+
+    @media (min-width:768px) {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+}
+
+.form-set-programm-item:checked+.form-set-programm-label::before {
+    background-color: $firmcolor;
+}
+
+.form-set-programm-item:focus+.form-set-programm-label::before {
+    border: 2px solid #000;
+}
+
+.form-set-programm-item:hover+.form-set-programm-label::before {
+    border: 2px solid #aaa;
+}

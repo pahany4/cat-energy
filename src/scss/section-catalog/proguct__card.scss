@@ -1,0 +1,31 @@
+.proguct__card {
+    @media (min-width:768px) {
+        text-align: center;
+        width: 254px;
+        margin: auto;
+    }
+
+    @media (min-width:1280px) {
+        width: 98%;
+    }
+
+}
+
+.proguct__card_more {
+    text-align: center;
+    height: 100%;
+
+    @media (min-width:768px) {
+        padding-top: 135px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@import "proguct__img.scss";
+@import "product__title.scss";
+@import "product__subtitle.scss";
+@import "product__options.scss";
+@import "product__order.scss";

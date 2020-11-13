@@ -1,0 +1,25 @@
+.form-set-personal-wrap {
+    @media (min-width:768px) {
+        padding: 0 40px;
+    }
+
+    @media (min-width:1280px) {
+        display: flex;
+        min-height: 196px;
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 0;
+    }
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .form-set-personal-wrap {
+        height: 196px;
+
+    }
+}
+
+@import "form-set-personal.scss";
+@import "form-set-programm.scss";

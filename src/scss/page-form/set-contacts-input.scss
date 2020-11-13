@@ -1,0 +1,26 @@
+.set-contacts-input {
+    padding: 10px 0 10px 16px;
+    margin-left: 12px;
+    flex-grow: 1;
+    border: 1px solid #cdcdcd;
+}
+
+.set-contacts-input::placeholder {
+    text-transform: uppercase;
+}
+
+.set-contacts-input:hover {
+    border: 1px solid #aaa;
+}
+
+.set-contacts-input:hover+svg {
+    fill: $firmcolor;
+}
+
+.set-contacts-input:focus {
+    border: 1px solid #000;
+}
+
+.set-contacts-input:focus+svg {
+    fill: $firmcolor;
+}

@@ -1,0 +1,39 @@
+.footer__develop {
+    font-family: "Arial", sans-serif;
+    @include font-style (16px, 16px, normal, $textcolor);
+    margin-right: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    @media (min-width:768px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/**
+* icon develop
+*/
+.footer__develop-icon {
+    fill: #666;
+}
+
+/**
+* hover
+*/
+
+.footer__develop-link:hover>.footer__develop {
+    color: $firmcolor;
+}
+
+
+.footer__develop-link:hover svg {
+    fill: $firmcolor;
+}
+
+/**
+* active
+*/
+.footer__develop-link:active {
+    opacity: .4;
+}

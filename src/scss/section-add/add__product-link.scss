@@ -1,0 +1,12 @@
+.add__product-link {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    @media (min-width:1280px) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row: 1;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,17 @@
+.head-content__link--wrap {
+    @media (min-width:768px) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: 88px;
+    }
+
+    @media (min-width:1280px) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: 114px;
+        width: 54%;
+        grid-row-start: 3;
+
+    }
+}
+@import "head-content__link.scss";

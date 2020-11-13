@@ -1,0 +1,13 @@
+/**
+* link style
+*/
+.main-nav__link {
+    font-family: "Oswald-Regular", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.main-nav__link:focus {
+    outline: 2px solid #777;
+}

@@ -1,0 +1,13 @@
+.footer__logo-wrap {
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 80px;
+
+    @media (min-width:768px) {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@import "footer__index-link.scss";
+@import "footer__logo.scss";

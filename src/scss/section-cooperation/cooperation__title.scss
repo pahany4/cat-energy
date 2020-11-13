@@ -1,0 +1,16 @@
+.cooperation__title {
+    @include font-style (16px, 20px, bold, $textdark);
+    text-transform: uppercase;
+    font-family: "Oswald-Regular", sans-serif;
+    width: 80%;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+        line-height: 25px;
+        width: 30%;
+    }
+
+    @media (min-width:1280px) {
+        width: 40%;
+    }
+}

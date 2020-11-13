@@ -1,0 +1,13 @@
+.catalog__list {
+    padding: 0;
+    width: 280px;
+    margin: auto;
+
+    @media (min-width:768px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@import "product.scss"

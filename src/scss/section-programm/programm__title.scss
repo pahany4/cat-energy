@@ -1,0 +1,15 @@
+.programm__title {
+    font-family: "Oswald-Regular", sans-serif;
+    text-transform: uppercase;
+    @include font-style(24px, 37.02px, normal, $textdark);
+    margin-top: 6px;
+    margin-bottom: 29px;
+
+    @media (min-width:768px) {
+        font-size: 36px;
+    }
+
+    @media (min-width:1280px) {
+        margin-top: 52px;
+    }
+}

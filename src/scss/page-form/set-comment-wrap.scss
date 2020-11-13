@@ -1,0 +1,7 @@
+.set-comment-wrap {
+    @media (min-width:768px) {
+        margin: 0 40px;
+    }
+}
+
+@import "set-comment__textarea.scss"

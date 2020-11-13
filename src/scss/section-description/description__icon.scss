@@ -1,0 +1,22 @@
+.description__icon--wrap {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-color: $firmcolor;
+    flex-shrink: 0;
+    margin-right: 23px;
+
+    @media (min-width:768px) {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.description__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
