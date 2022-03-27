@@ -1,0 +1,116 @@
+.comment {
+    padding: 0 30px;
+
+    @media (min-width: 768px) {
+        padding: 0 50px;
+        background-image: url("../img/review.jpg");
+        background-repeat: no-repeat;
+        padding: 10px 50px 30px;
+    }
+
+    @media (min-width: 1150px) {
+        padding: 10px 100px 30px;
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .btn {
+        margin-top: 34px;
+
+        @media (min-width:768px) {
+            position: absolute;
+            width: calc(100% / 6 * 1.57);
+            right: 0;
+            top: -31px;
+            z-index: 5;
+        }
+
+        @media (min-width:1150px) {
+            width: 20%;
+            top: 34px;
+        }
+    }
+
+    .comment-wrap {
+        @media (min-width:768px) {
+            position: relative;
+        }
+
+        @media (min-width:1150px) {
+            width: calc(100% / 6 * 5);
+        }
+    }
+}
+
+.comment-wrap h2 {
+    @media (min-width:768px) {
+        font-size: 43px;
+        line-height: 50px;
+        margin-top: 67px;
+        margin-bottom: 50px;
+    }
+
+    @media (min-width:768px) {
+        font-size: 53px;
+        line-height: 57px;
+    }
+
+    @media (min-width:1150px) {
+        margin-top: 62px;
+    }
+}
+
+.comment__cite {
+    font-size: 15px;
+    line-height: 30px;
+    font-style: normal;
+
+    @media (min-width:768px) {
+        font-size: 17px;
+    }
+}
+
+.comment__autor {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 29px;
+
+    @media (min-width:768px) {
+        font-size: 18px;
+        margin-top: 56px;
+    }
+
+    @media (min-width:1150px) {
+        margin-top: 36px;
+    }
+}
+
+.comment__arrow {
+    display: flex;
+    margin-top: 30px;
+
+    @media (min-width:768px) {
+        position: absolute;
+        width: 26%;
+        right: 0;
+        bottom: 3px;
+    }
+
+    @media (min-width:1150px) {
+        width: 20%;
+        bottom: 23px;
+    }
+
+
+    button {
+        padding: 10px 0;
+        width: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+
+        @media (min-width:768px) {
+            border: none;
+        }
+    }
+}

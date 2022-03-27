@@ -1,0 +1,68 @@
+//стили для закрытого меню
+.page-header__inner.open {
+    width: 100vw;
+    position: absolute;
+    background-color: #fff;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, $colorElemLight 20%, transparent 21%, transparent 40%,
+            $colorElemLight 41%, $colorElemLight 60%, transparent 61%, transparent 80%,
+            $colorElemLight 81%);
+    position: absolute;
+    right: 18px;
+    bottom: 35px;
+    z-index: 5;
+    bottom: 0;
+}
+
+.menu-icon_hid {
+    display: none;
+}
+
+.menu-hid {
+    margin-top: -315px;
+}
+
+.menu-close {
+    animation-name: menu-close;
+    animation-duration: .8s;
+
+}
+
+@keyframes menu-close {
+    0% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: -315px;
+    }
+}
+
+//стили для открытого меню
+.menu-icon_activ {
+    background: linear-gradient(45deg, transparent 45%, $colorElemLight 46%, $colorElemLight 55%, transparent 56%),
+        linear-gradient(-45deg, transparent 45%, $colorElemLight 46%, $colorElemLight 55%, transparent 56%);
+    border: none;
+}
+
+.menu-open {
+    animation-name: menu-open;
+    animation-duration: .8s;
+
+}
+
+@keyframes menu-open {
+    0% {
+        margin-top: -315px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}

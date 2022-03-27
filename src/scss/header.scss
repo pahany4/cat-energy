@@ -1,0 +1,176 @@
+.page-header {
+    nav {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: .2);
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        padding: 0 50px;
+    }
+
+    // Позиция логотипа
+    &__logo {
+        position: relative;
+        text-align: center;
+        margin: 22px auto;
+        z-index: 2;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            left: calc(50% - 56px);
+            top: 79px;
+        }
+
+        @media (min-width: 1150px) {
+            left: calc(50% - 75px);
+            top: -13px;
+        }
+    }
+
+    &__logo a:hover {
+        opacity: .5;
+    }
+}
+
+//меню сайта
+
+
+// текст и иконки
+.main-nav__list,
+.main-nav__user-list {
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    .main-nav__item {
+        position: relative;
+        padding-left: 77px;
+        padding-top: 25px;
+        padding-right: 20px;
+        padding-bottom: 33px;
+        list-style: none;
+        border-top: 1px solid rgba($color: #000000, $alpha: .2);
+
+        @media (min-width: 768px) {
+            padding-right: 0;
+            padding-left: 30px;
+            padding-top: 31px;
+            border-top: none;
+        }
+
+        @media (min-width: 1150px) {
+            padding-top: 34px;
+            padding-right: 20px;
+            padding-left: 50px;
+        }
+    }
+
+    .main-nav__search {
+        @media (min-width: 768px) {
+            padding-left: 83px;
+            border-left: 1px solid rgba($color: #000000, $alpha: .2);
+        }
+    }
+
+    .main-nav__icon {
+        position: absolute;
+        opacity: .2;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .icon-search {
+        left: 32px;
+        top: 28px;
+
+        @media (min-width: 768px) {
+            left: 32px;
+            top: 32px;
+        }
+
+        @media (min-width: 1150px) {
+            left: 25px;
+            top: 32px;
+        }
+    }
+
+    .icon-cart {
+        left: 32px;
+        top: 28px;
+
+        @media (min-width: 768px) {
+            left: 6px;
+            top: 32px;
+        }
+
+        @media (min-width: 1150px) {
+            left: 16px;
+            top: 32px;
+        }
+    }
+}
+
+
+
+.text-search {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+// рамки элементов меню
+.main-nav__user-list:last-child {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .2);
+
+    @media (min-width: 768px) {
+        border-bottom: none;
+    }
+}
+
+.main-nav__cart {
+    @media (min-width: 768px) {
+        border-left: 1px solid rgba(0, 0, 0, .2);
+    }
+}
+
+//стили ссылок
+.main-nav__link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: $textColorBold;
+
+    @media (min-width: 1150px) {
+        font-size: 17px;
+    }
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+
+//логотип
+.logo {
+    @media (min-width: 1150px) {
+        width: 149px;
+        height: 72px;
+    }
+
+    @media (min-width: 768px) {
+        width: 113px;
+        height: 46px;
+    }
+}

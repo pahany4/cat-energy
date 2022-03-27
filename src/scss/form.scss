@@ -1,0 +1,262 @@
+.delivery {
+    background-color: #f1f1f1;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.delivery__title {
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.form {
+    padding: 20px 30px;
+
+    @media (min-width: 768px) {
+        padding: 20px 50px;
+    }
+}
+
+.form__description {
+    margin-bottom: 35px;
+
+    @media (min-width: 1150px) {
+        width: calc(100% / 6 * 4);
+        margin: 25px auto;
+    }
+
+    p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 24px;
+
+        @media (min-width: 768px) {
+            font-size: 17px;
+            line-height: 30px;
+        }
+    }
+}
+
+// параграф
+.order__title {
+    @media (min-width: 768px) {
+        width: 17%;
+    }
+
+    p {
+        color: $colorElemLight;
+        font-size: 17px;
+        line-height: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+
+        @media (min-width: 1150px) {
+            margin: 0 25%;
+        }
+    }
+
+    //риска параграфа
+    p::after {
+        display: block;
+        flex-grow: 1;
+        content: "";
+        width: 100%;
+        height: 1px;
+        border: 1px solid $colorElemLight;
+        margin-left: 30px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+//радио-баттоны
+
+.interior::before,
+.toys::before {
+    margin-right: 23px;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    background-clip: content-box;
+    padding: 10px;
+}
+
+.interior:hover::before,
+.toys:hover::before {
+    border-color: $colorElemLight;
+}
+
+// фокус элементов
+#interior:focus+.interior {
+    border-color: $colorElemLight;
+}
+
+#toys:focus+.toys {
+    border-color: $colorElemLight;
+}
+
+//чекед радио-инпутов
+
+#interior:checked+.interior::before {
+    background-color: #62d1ba;
+
+}
+
+#toys:checked+.toys::before {
+    background-color: #62d1ba;
+}
+
+//label "тип"
+.interior,
+.toys,
+.order__color--label {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+
+// Цвет
+.order__color--wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+// чекеды
+.order__color--label::before {
+    margin-right: 23px;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 10px;
+    background-clip: content-box;
+    padding: 5px;
+}
+
+//чекед чек-инпутов
+.check:checked+.order__color--label::before {
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// фокус элементов чек
+.check:focus+.order__color--label::before {
+    border-color: $colorElemLight;
+}
+
+//ФИО
+.order__fio--wrap {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 18px;
+        font-weight: bold;
+    }
+}
+
+[type="text"] {
+    border: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+
+[type="text"]:focus,
+[type="text"]:hover {
+    outline: 0;
+    border-bottom: 2px solid $colorElemLight;
+}
+
+//textaria
+textarea {
+    width: 100%;
+    border: 2px solid #000;
+    display: block;
+    resize: none;
+    padding: 15px;
+    flex-grow: 1;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    resize: vertical;
+    min-height: 30vw;
+}
+
+// расположение элементов формы по сетке
+.tipe--inner {
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.tipe--wrap {
+    @media (min-width: 768px) {
+        width: calc(100% / 4 *3);
+    }
+}
+
+.order__color--wrap {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 1150px) {
+        width: calc(100% / 6 * 5);
+    }
+}
+
+.order__color--label {
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1150px) {
+        width: calc(100% / 10 * 3);
+    }
+}
+
+// кнопка отправить и надпись
+.send {
+    @media (min-width: 768px) {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1150px) {
+        width: calc(100% / 6 * 4);
+        margin: 30px auto;
+    }
+
+    .btn {
+        @media (min-width: 768px) {
+            width: 30%;
+        }
+    }
+}

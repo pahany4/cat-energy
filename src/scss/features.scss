@@ -1,0 +1,204 @@
+br {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.features {
+    padding: 21px 30px 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+        padding: 48px 48px 0;
+    }
+
+    a {
+        @media (min-width: 768px) {
+            display: block;
+            width: 43%;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 1150px) {
+            display: block;
+            width: 32%;
+
+        }
+    }
+}
+
+.features__description-wrap {
+    @media (min-width: 1150px) {
+        margin-left: 20%;
+    }
+}
+
+.features__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1150px) {
+        justify-content: center;
+        margin-top: 76px;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 25px;
+
+        @media (min-width: 768px) {
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        @media (min-width: 1150px) {
+            font-size: 53px;
+            line-height: 57px;
+            order: 2;
+        }
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: bold;
+        color: #63d1bb;
+        margin-top: 4px;
+        margin-bottom: 12px;
+
+        @media (min-width: 768px) {
+            line-height: 17px;
+            margin-top: 10px;
+            margin-bottom: 43px;
+            margin-right: 23px;
+        }
+
+        @media (min-width: 1150px) {
+
+            line-height: 17px;
+            margin-top: 10px;
+            margin-bottom: 43px;
+            margin-right: 23px;
+        }
+    }
+}
+
+.features__description {
+    @media (min-width: 768px) {
+        width: 44%;
+        margin-bottom: 41px;
+    }
+
+    @media (min-width: 1150px) {
+        width: 25%;
+    }
+
+}
+
+.features__description p {
+    font-size: 15px;
+    line-height: 24px;
+
+    @media (min-width: 768px) {
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+
+// таблица
+.features__table {
+    font-size: 15px;
+    line-height: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+        width: 39%;
+    }
+
+    @media (min-width: 1150px) {}
+}
+
+.features__row {
+    border-bottom: 1px solid #ececec;
+}
+
+td:first-child {
+    width: 37%;
+}
+
+.features__cell {
+    padding: 10px 0;
+}
+
+.features img {
+    max-width: 100%;
+    height: auto;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        width: 329px;
+        height: auto;
+        right: 52px;
+        top: 29%;
+        z-index: -1;
+    }
+
+    @media (min-width: 1150px) {
+        right: 99px;
+        top: 8%;
+        width: 525px;
+    }
+}
+
+//цена
+.features__order {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    margin-bottom: 9px;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1150px) {
+        width: 31%;
+    }
+
+    .features__price,
+    .features__price-value {
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+}
+
+//кнопка "заказать"
+.btn {
+    display: inline-block;
+    padding: 15px 0;
+    border: 2px solid #444;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}

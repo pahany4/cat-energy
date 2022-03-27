@@ -1,0 +1,53 @@
+@import "normalize.scss";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+
+}
+
+//colors
+$textColorBold: #000;
+$textColor: #444444;
+$colorElemLight: #62d1ba;
+$colorElemDark: #56c3b2;
+
+@import "fonts";
+
+@import "global";
+
+@import "header";
+
+@import "index-content";
+
+@import "features";
+
+.zigzag {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+
+    @media (min-width: 768px) {
+        margin: 50px 0;
+    }
+
+    @media (min-width: 1600px) {
+        margin: 100px 0;
+    }
+}
+
+@import "menuMobile";
+@import "about";
+@import "comment";
+@import "contacts";
+@import "footer";
+
+//page form
+@import "form";
