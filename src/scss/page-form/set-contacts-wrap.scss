@@ -1,9 +1,0 @@
-.set-contacts-wrap {
-
-    @media (min-width:1280px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@import "set-contacts__label.scss";
